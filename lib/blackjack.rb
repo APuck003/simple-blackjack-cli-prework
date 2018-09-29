@@ -29,7 +29,18 @@ def initial_round
 end
 
 def hit?
-  
+  prompt_user
+  input = get_user_input
+  if input == 's'
+    num
+  elsif input == 'h'
+    x = deal_card
+    num =+ x
+  else
+    invalid_command
+    prompt_user
+  end
+  num
 end
 
 def invalid_command
