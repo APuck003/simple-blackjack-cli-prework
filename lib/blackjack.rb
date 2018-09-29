@@ -35,7 +35,7 @@ def hit?(num)
     num
   elsif input == 'h'
     x = deal_card
-    num =+ x
+    num += x
   else
     invalid_command
     prompt_user
